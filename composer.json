@@ -1,15 +1,20 @@
 {
-    "name": "rommea/mail-tracker",
+    "name": "ideacatlab/mail-tracker",
     "type": "library",
     "description": "Logs and tracks all outgoing emails from Laravel",
     "keywords": [
-        "rommea",
-        "MailTracker"
+        "mail-tracker"
     ],
     "minimum-stability": "dev",
     "homepage": "https://github.com/rommeA/MailTracker",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Razvan Gheorghe",
+            "email": "php@ideacat.ro",
+            "homepage": "https://github.com/ideacatlab/mail-tracker",
+            "role": "Developer"
+        },
         {
             "name": "Anna Romme",
             "email": "anna.romme22@gmail.com",
