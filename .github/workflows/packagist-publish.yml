@@ -4,7 +4,7 @@
 name: ComposerPackagePublish
 
 on:
-  release
+  push
 
 jobs:
   build:
