@@ -1,0 +1,24 @@
+#
+#
+
+name: ComposerPackagePublish
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Publish a composer package
+      uses: better-php-actions/publish-composer-package@v1
+      with:
+          package_slug: "your-package-slug"
+          package_name: "Your Package Name"
+          with_gpg: true
+          gpg_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          release_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
